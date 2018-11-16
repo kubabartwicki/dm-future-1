@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Pages in this prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Pages in this prototype
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="index">Choose lot</a>
+        </li>
+        <li><a href="search">Search</a>
+        </li>
+        <li><a href="search-refined">Search (refined)</a>
+        </li>
+        <li><a href="login">Log in</a>
+        </li>
+        <li><a href="brief-name">Brief (name)</a>
+        </li>
+        <li><a href="brief-name">Brief (dates)</a>
+        </li>
+        <li><a href="brief-name">Brief (location)</a>
+        </li>
+        <li><a href="brief-name">Brief (?)</a>
+        </li>
+        <li><a href="brief-confirmation">Brief confirmation</a>
+        </li>
+        <li><a href="questions-answers">List of responses and Qs/As</a>
+        </li>
+        <li><a href="results-export">Export list of suppliers</a>
+        </li>
+        <li><a href="results-download">Download list of suppliers</a>
+        </li>
+        <li><a href="results-confirmation">Do this thing next</a>
+        </li>
+        <li><a href="outcome-tell-us">Tell us the outcome</a>
+        </li>
+        <li><a href="outcome-done">Done</a>
+        </li>
+      </ul>
+
+
+    </div>
+</div>
+
+{% endblock %}
